@@ -18,6 +18,7 @@ Lately I've been working on authority and safety architecture for autonomous age
 - [#5459](https://github.com/NVIDIA/cuda-quantum/pull/5459) (merged) - documented `exp_pauli`, `givens_rotation`, and `fermionic_swap`, and fixed a sign error in the `applyExpPauli` doc comment that every simulator backend inherits.
 - [#5609](https://github.com/NVIDIA/cuda-quantum/pull/5609) (merged) - documented how a `qvector` can supply the targets of a custom operation in Python vs C++. In review, the CUDA-Q architect confirmed that an asymmetry it surfaced is a Python bridge bug.
 - [#5646](https://github.com/NVIDIA/cuda-quantum/issues/5646), [#5647](https://github.com/NVIDIA/cuda-quantum/issues/5647) (filed on request) - the two Python bridge bugs from that review: single-target custom operations don't broadcast, and multi-target ones pull targets out of a `qvector`.
+- [#5649](https://github.com/NVIDIA/cuda-quantum/pull/5649) (in review) - fix for #5646: single-target custom operations now broadcast over a `qvector` and over several qubits, in plain and `.adj` calls, matching the built-in gates and the C++ bridge.
 - [#5608](https://github.com/NVIDIA/cuda-quantum/pull/5608) (in review) - fixed the custom `KrausChannel` example under `cudaq.apply_noise`, which crashes as printed.
 
 **NVIDIA Physical AI Data Factory** ([NVIDIA/physical-ai-data-factory](https://github.com/NVIDIA/physical-ai-data-factory))
