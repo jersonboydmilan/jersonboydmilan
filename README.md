@@ -9,7 +9,7 @@ Lately I've been working on authority and safety architecture for autonomous age
 - [Sentinel](https://github.com/jersonboydmilan/Sentinel) - an authority-attenuating immune architecture for AI agents. Detects and contains compromised agents without giving defenders unrestricted authority.
 - [Capgate](https://github.com/jersonboydmilan/Capgate) - runtime authority boundary for autonomous AI agents. The agent proposes, the harness authorizes, the executor acts. Deny-by-default policy, non-transitive delegation, tamper-evident audit.
 - [Agent-Skills-Compendium](https://github.com/jersonboydmilan/Agent-Skills-Compendium) - an open compendium for discovering, defining, composing, and governing reusable capabilities for AI agents, from digital intelligence to multi-agent systems and Physical AI.
-- [QUANTUM-CUDA](https://github.com/jersonboydmilan/QUANTUM-CUDA) - the analysis, runnable verification, and patches behind my NVIDIA CUDA-Q contributions. Every claim is checked against what CUDA-Q actually executes, not transcribed from comments.
+- [QUANTUM-CUDA](https://github.com/jersonboydmilan/QUANTUM-CUDA) - the analysis, runnable verification, and patches behind my NVIDIA CUDA-Q contributions: 2 merged PRs, 2 in review, and 2 bridge bugs filed at the architect's request. Every claim is checked against what CUDA-Q actually executes, not transcribed from comments.
 
 ### Open-source contributions
 
