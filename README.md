@@ -1,56 +1,99 @@
-## Hi, I'm Jerson
+<div align="center">
 
-Building AI systems, agents, and Physical AI - with a focus on local-first, practical intelligence.
+# Jerson Boyd Milan
 
-Lately I've been working on authority and safety architecture for autonomous agents: how to let an agent act with real capability without giving it, or an attacker who compromises it, unrestricted power.
+**AI systems, autonomous agents, and Physical AI — local-first, practical intelligence.**
 
-### What I'm building
+[![Website](https://img.shields.io/badge/jersonboydmilan.com-000000?style=flat&logo=googlechrome&logoColor=white)](https://www.jersonboydmilan.com)
+[![CUDA-Q contributor](https://img.shields.io/badge/NVIDIA_CUDA--Q-contributor-76B900?style=flat&logo=nvidia&logoColor=white)](https://github.com/NVIDIA/cuda-quantum/pulls?q=author%3Ajersonboydmilan)
+[![Open-source PRs](https://img.shields.io/badge/open--source-PRs-24292f?style=flat&logo=github&logoColor=white)](https://github.com/pulls?q=author%3Ajersonboydmilan+is%3Apr+-user%3Ajersonboydmilan)
 
-- [Sentinel](https://github.com/jersonboydmilan/Sentinel) - an authority-attenuating immune architecture for AI agents. Detects and contains compromised agents without giving defenders unrestricted authority.
-- [Capgate](https://github.com/jersonboydmilan/Capgate) - runtime authority boundary for autonomous AI agents. The agent proposes, the harness authorizes, the executor acts. Deny-by-default policy, non-transitive delegation, tamper-evident audit.
-- [Agent-Skills-Compendium](https://github.com/jersonboydmilan/Agent-Skills-Compendium) - an open compendium for discovering, defining, composing, and governing reusable capabilities for AI agents, from digital intelligence to multi-agent systems and Physical AI.
-- [QUANTUM-CUDA](https://github.com/jersonboydmilan/QUANTUM-CUDA) - the analysis, runnable verification, and patches behind my NVIDIA CUDA-Q contributions: 2 merged PRs, 4 in review, and 2 Python bridge bugs filed at the architect's request. Every claim is checked against what CUDA-Q actually executes, not transcribed from comments.
+</div>
+
+I build agent systems that can act with real capability **without** handing the agent, or an attacker who compromises it, unrestricted power. Most of my time goes into authority and safety architecture for autonomous agents, and into upstream fixes for the open-source tools I build on.
+
+### Now
+
+- Designing **authority boundaries** for agents: deny-by-default policy, non-transitive delegation, tamper-evident audit.
+- Contributing to **NVIDIA CUDA-Q**: docs fixes and Python bridge fixes, each verified against the real runtime.
+- Exploring **Physical AI** data pipelines and agent tooling.
+
+---
+
+### Featured projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**[Sentinel](https://github.com/jersonboydmilan/Sentinel)**<br>
+An authority-attenuating immune architecture for AI agents. Detects and contains compromised agents without giving defenders unrestricted authority.<br>
+<sub>Python · agent security</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[Capgate](https://github.com/jersonboydmilan/Capgate)**<br>
+A runtime authority boundary for autonomous agents: the agent proposes, the harness authorizes, the executor acts. Deny-by-default policy, non-transitive delegation, tamper-evident audit.<br>
+<sub>Python · MCP gateway · isolation</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[Agent-Skills-Compendium](https://github.com/jersonboydmilan/Agent-Skills-Compendium)**<br>
+An open registry of fully specified AI agent skills, with taxonomy, canonical schema, composer, governance model, and a fleet runner.<br>
+<sub>TypeScript · multi-agent systems</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[QUANTUM-CUDA](https://github.com/jersonboydmilan/QUANTUM-CUDA)**<br>
+The analysis, runnable verification, and patches behind my CUDA-Q contributions. Every claim is checked against what CUDA-Q actually executes, not transcribed from comments.<br>
+<sub>Python · quantum computing</sub>
+
+</td>
+</tr>
+</table>
+
+---
 
 ### Open-source contributions
 
-**NVIDIA CUDA-Q** ([NVIDIA/cuda-quantum](https://github.com/NVIDIA/cuda-quantum))
+Status badges are live and update as PRs are reviewed.
 
-- [#5459](https://github.com/NVIDIA/cuda-quantum/pull/5459) (merged) - documented `exp_pauli`, `givens_rotation`, and `fermionic_swap`, and fixed a sign error in the `applyExpPauli` doc comment that every simulator backend inherits.
-- [#5609](https://github.com/NVIDIA/cuda-quantum/pull/5609) (merged) - documented how a `qvector` can supply the targets of a custom operation in Python vs C++. Its review led the CUDA-Q architect to state the DSL's operation-overload rules, and the maintainers then removed the Python-only behavior in #5652.
-- [#5646](https://github.com/NVIDIA/cuda-quantum/issues/5646), [#5647](https://github.com/NVIDIA/cuda-quantum/issues/5647) (filed on request) - the two Python bridge bugs from that review. #5647 is now resolved on `main` by #5652.
-- [#5649](https://github.com/NVIDIA/cuda-quantum/pull/5649) (in review) - single-target broadcast for custom operations (#5646), verified on the real CUDA-Q 0.16.0 runtime. After #5652, which keeps custom ops positional-only for now, I've asked the maintainers which direction they want.
-- [#5655](https://github.com/NVIDIA/cuda-quantum/pull/5655) (in review) - made the Observe examples on "Executing Kernels" runnable on their own (#3409); found by running every docs snippet in isolation.
-- [#5658](https://github.com/NVIDIA/cuda-quantum/pull/5658) (in review) - "Building Kernels" now shows the state each example prepares instead of a bare call, matching the notebook fix in #3383 (#3384).
-- [#5608](https://github.com/NVIDIA/cuda-quantum/pull/5608) (in review) - fixed the custom `KrausChannel` example under `cudaq.apply_noise`, which crashes as printed.
+| Project | Contribution | Status |
+| :--- | :--- | :--- |
+| **[NVIDIA CUDA-Q](https://github.com/NVIDIA/cuda-quantum)** | Documented `exp_pauli`, `givens_rotation` and `fermionic_swap`, and fixed a sign error in the `applyExpPauli` doc comment every simulator backend inherits | [![#5459](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5459?label=%235459)](https://github.com/NVIDIA/cuda-quantum/pull/5459) |
+| | Documented `qvector` targets for custom ops in Python vs C++. Its review led the architect to state the DSL's overload rules; the maintainers then removed the Python-only behavior in #5652 | [![#5609](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5609?label=%235609)](https://github.com/NVIDIA/cuda-quantum/pull/5609) |
+| | Fixed the custom `KrausChannel` example under `cudaq.apply_noise`, which crashes as printed | [![#5608](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5608?label=%235608)](https://github.com/NVIDIA/cuda-quantum/pull/5608) |
+| | Single-target broadcast for custom operations ([#5646](https://github.com/NVIDIA/cuda-quantum/issues/5646)), verified on the real runtime; direction under discussion after #5652 | [![#5649](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5649?label=%235649)](https://github.com/NVIDIA/cuda-quantum/pull/5649) |
+| | Made the Observe examples on "Executing Kernels" runnable on their own ([#3409](https://github.com/NVIDIA/cuda-quantum/issues/3409)) | [![#5655](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5655?label=%235655)](https://github.com/NVIDIA/cuda-quantum/pull/5655) |
+| | "Building Kernels" now shows the state each example prepares instead of a bare call ([#3384](https://github.com/NVIDIA/cuda-quantum/issues/3384)) | [![#5658](https://img.shields.io/github/pulls/detail/state/NVIDIA/cuda-quantum/5658?label=%235658)](https://github.com/NVIDIA/cuda-quantum/pull/5658) |
+| **[NVIDIA Physical AI Data Factory](https://github.com/NVIDIA/physical-ai-data-factory)** | Fixed a `NameError` crash in the Video Data Augmentation pre-submit guard's model-cache check | [![#22](https://img.shields.io/github/pulls/detail/state/NVIDIA/physical-ai-data-factory/22?label=%2322)](https://github.com/NVIDIA/physical-ai-data-factory/pull/22) |
+| **[Microsoft Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit)** | A 240-scenario red-team measurement suite that scores real detector catch/miss rates on canonical and evasion prompt-injection probes | [![#4346](https://img.shields.io/github/pulls/detail/state/microsoft/agent-governance-toolkit/4346?label=%234346)](https://github.com/microsoft/agent-governance-toolkit/pull/4346) |
+| **[AgentKit](https://github.com/orka-agents/agentkit)** | `x-`/`X-` extension fields in the Agentkitfile, so values can be defined once and reused through YAML anchors | [![#71](https://img.shields.io/github/pulls/detail/state/orka-agents/agentkit/71?label=%2371)](https://github.com/orka-agents/agentkit/pull/71) |
+| | Every Agentkitfile validation error names its file and line, and carries a BuildKit source location so Docker shows the surrounding lines | [![#75](https://img.shields.io/github/pulls/detail/state/orka-agents/agentkit/75?label=%2375)](https://github.com/orka-agents/agentkit/pull/75) |
+| **[guardrail](https://github.com/FvdHMBAI/guardrail)** | `docker_container_guard`: blocks `docker run`/`create` flags that break container isolation | [![#52](https://img.shields.io/github/pulls/detail/state/FvdHMBAI/guardrail/52?label=%2352)](https://github.com/FvdHMBAI/guardrail/pull/52) |
+| **[RepoLens](https://github.com/deswanth12/repolens)** | A `--schema` flag exporting the JSON Schema of the machine-readable report | [![#5](https://img.shields.io/github/pulls/detail/state/deswanth12/repolens/5?label=%235)](https://github.com/deswanth12/repolens/pull/5) |
 
-**NVIDIA Physical AI Data Factory** ([NVIDIA/physical-ai-data-factory](https://github.com/NVIDIA/physical-ai-data-factory))
+<sub>Also filed on request of the CUDA-Q architect: Python bridge bugs [#5646](https://github.com/NVIDIA/cuda-quantum/issues/5646) and [#5647](https://github.com/NVIDIA/cuda-quantum/issues/5647). #5647 is now resolved on `main` by #5652.</sub>
 
-- [#22](https://github.com/NVIDIA/physical-ai-data-factory/pull/22) (in review) - fixed a `NameError` crash in the Video Data Augmentation pre-submit guard's model-cache check.
+---
 
-**Microsoft Agent Governance Toolkit** ([microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit))
+### How I work
 
-- [#4346](https://github.com/microsoft/agent-governance-toolkit/pull/4346) (in review) - a 240-scenario red-team measurement suite scoring real detector catch/miss rate against canonical and evasion prompt-injection probes, without weakening the existing hard release gate.
-
-**AgentKit** ([orka-agents/agentkit](https://github.com/orka-agents/agentkit))
-
-- [#71](https://github.com/orka-agents/agentkit/pull/71) (merged) - `x-`/`X-` extension field prefixes for the Agentkitfile (Docker Compose/OpenAPI convention), so a value can be defined once behind an `x-` field and reused elsewhere via a YAML anchor.
-- [#75](https://github.com/orka-agents/agentkit/pull/75) (in review) - every Agentkitfile validation error now names its file and line (`agentkitfile.yaml:14: tools[1] ...`) and carries a BuildKit source location, so Docker shows the surrounding lines the way it does for a Dockerfile.
-
-**guardrail** ([FvdHMBAI/guardrail](https://github.com/FvdHMBAI/guardrail))
-
-- [#52](https://github.com/FvdHMBAI/guardrail/pull/52) (in review) - `docker_container_guard`, a pre-bash hook blocking `docker run`/`docker create` with flags that break container isolation: `--privileged`, host network/PID namespace, host-root bind mounts.
-
-**RepoLens** ([deswanth12/repolens](https://github.com/deswanth12/repolens))
-
-- [#5](https://github.com/deswanth12/repolens/pull/5) (in review) - a `--schema` flag exporting the JSON Schema for RepoLens' machine-readable report, so tool integrators and AI agents can validate output without reverse-engineering the models.
+- **Verify, don't transcribe.** Every claim in a PR is checked against what the code actually does, using the real runtime, a reproducer, or a numerical check, and the script goes into the repo.
+- **Small, reviewable changes.** One concern per PR, history traced through the linked issues, and open questions left to the maintainers instead of settled unilaterally.
+- **Honest scope.** What I couldn't verify is stated in the PR, not glossed over.
 
 ### Focus areas
 
-- Agent authority and permission boundaries
-- Multi-agent governance and skill composition
-- Physical AI
-- Local-first, practical intelligence over hype
+`Agent authority & permission boundaries` · `Multi-agent governance` · `Skill composition` · `Physical AI` · `Local-first AI`
 
-### Find me
+---
 
-- Website: https://www.jersonboydmilan.com
+<div align="center">
+<sub><a href="https://www.jersonboydmilan.com">jersonboydmilan.com</a></sub>
+</div>
